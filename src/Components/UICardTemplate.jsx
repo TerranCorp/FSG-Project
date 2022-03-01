@@ -22,7 +22,6 @@ const clearResults = () => {
     return (
         <div>
             <CardTemplate results={null} description={props.description} title={props.title} buttonBehavior={onButtonClick}/>
-            {/* <Button /> */}
         </div>
     )
 } 
