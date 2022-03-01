@@ -24,8 +24,8 @@ const onButtonClick = () => {
                 <CardText>
                     {props.results}
                 </CardText>
-                <div className="row flex col-3 offset-0">
-                    <Button onClick={onButtonClick()}/>                    
+                <div>
+                    <Button className="col-2"onClick={onButtonClick()}>Clear</Button>                    
                 </div>
                 
             </Card>

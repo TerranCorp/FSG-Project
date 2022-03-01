@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import UICardTemplate from './UICardTemplate';
-import { CardGroup, CardSubtitle } from "reactstrap";
+import { CardGroup, CardSubtitle, Button } from "reactstrap";
 import SearchCard from "./SearchCard";
 
 class Home extends Component {
@@ -10,7 +10,7 @@ class Home extends Component {
 
         this.state = {
             cardCount: 4,
-            cardTitles: ["Results", "Favorite","Wishlist"],
+            cardTitles: ["Search Results:", "Favorite:","Wishlist:"],
             cardDescriptions:["Results are displayed here", "Your Favorite item","Wishlist"],
             renderedCards: []
         }
@@ -46,7 +46,8 @@ class Home extends Component {
                           
                 <CardGroup className="row">
                     {this.state.renderedCards}
-                </CardGroup>                
+                </CardGroup>
+                             
             </div>
         )
     }
